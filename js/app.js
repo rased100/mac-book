@@ -193,3 +193,25 @@ document.getElementById('aug-25-delivery').addEventListener('click', function ()
     const total = document.getElementById('total');
     total.innerText = totalPriceNumber;
 });
+
+
+
+// pomo code
+document.getElementById('apply-btn').addEventListener('click', function () {
+    const applyInput = document.getElementById('apply-input');
+    const applyPomo = applyInput.value;
+    const pomo = 'stevekaku';
+
+    const totalPrice = document.getElementById('total-price');
+    const totalPriceNumber = parseFloat(totalPrice.innerText);
+    const total = document.getElementById('total');
+    total.innerText = totalPriceNumber;
+
+    if (applyPomo == pomo) {
+        total.innerText = totalPriceNumber - ((totalPriceNumber * 20) / 100);
+    }
+    else {
+        total.innerText = totalPriceNumber;
+    }
+
+})
