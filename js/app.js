@@ -183,10 +183,12 @@ document.getElementById('aug-25-delivery').addEventListener('click', function ()
     // storage
     const extraStorageCost = storage();
 
+
     //total price
     const bestPrice = 1299;
     const totalPrice = document.getElementById('total-price');
-    totalPrice.innerText = bestPrice + extraStorageCostNumber1tb + extraMemoryCost + deliveryCharge;
+    totalPrice.innerText = bestPrice + extraStorageCost + extraMemoryCost + deliveryCharge;
+    console.log(bestPrice);
     const totalPriceNumber = parseFloat(totalPrice.innerText);
 
     //total
@@ -216,4 +218,4 @@ document.getElementById('apply-btn').addEventListener('click', function () {
 
 })
 
-// end
+// end-js
