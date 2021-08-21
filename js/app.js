@@ -21,7 +21,6 @@ function memory() {
 
 
 
-
 //16gb memory
 document.getElementById('16gb-memory').addEventListener('click', function () {
     const memoryCost16gb = 180;
@@ -71,6 +70,7 @@ document.getElementById('8gb-memory').addEventListener('click', function () {
 });
 
 
+
 // 512gb SSD storage
 document.getElementById('512gb-storage').addEventListener('click', function () {
     const storageCost512gb = 100;
@@ -93,6 +93,7 @@ document.getElementById('512gb-storage').addEventListener('click', function () {
     const total = document.getElementById('total');
     total.innerText = totalPriceNumber;
 });
+
 
 
 // 256GB SSD storage
@@ -119,6 +120,7 @@ document.getElementById('256gb-storage').addEventListener('click', function () {
 });
 
 
+
 // 1TB SSD storage
 document.getElementById('1TB-storage').addEventListener('click', function () {
     const storageCost1TB = 180;
@@ -143,6 +145,7 @@ document.getElementById('1TB-storage').addEventListener('click', function () {
 });
 
 
+
 // Choose your deluvery option $20
 document.getElementById('aug-21-delivery').addEventListener('click', function () {
     const deliveryCharge = 20;
@@ -165,6 +168,7 @@ document.getElementById('aug-21-delivery').addEventListener('click', function ()
     const total = document.getElementById('total');
     total.innerText = totalPriceNumber;
 });
+
 
 
 // Choose your deluvery option $0
@@ -211,3 +215,5 @@ document.getElementById('apply-btn').addEventListener('click', function () {
     }
 
 })
+
+// end
